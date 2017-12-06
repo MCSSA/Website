@@ -1,3 +1,2 @@
 # Website
-Website
-It is the Website for MCSSA
+It is the website for MCSSA
