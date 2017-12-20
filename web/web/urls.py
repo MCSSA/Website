@@ -21,7 +21,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', views.index),
     path('about.html', views.about),
-
+    path('404.html', views.not_found),
+    path('blog-fullwidth.html', views.blog_full),
+    path('blog-left-sidebar.html', views.blog_left),
+    path('blog-right-sidebar.html', views.blog_right),
+    path('contact.html', views.contact),
+    path('gallery.html', views.gallery),
+    path('service.html', views.service),
+    path('single-portfolio.html', views.single_port),
+    path('single-post.html', views.single_post),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
