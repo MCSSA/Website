@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
@@ -14,6 +15,13 @@ class News (models.Model):
     class Meta:
         db_table = "News"
 
-    def _str_(self):
+    def __str__(self):
         return self.title
 
+class User(AbstractUser):
+
+    class Meta:
+        db_table = "User"
+
+    def __str__(self):
+        return self.id
